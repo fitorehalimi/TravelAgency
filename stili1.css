@@ -1,0 +1,10 @@
+.paragrafi {
+	
+	border : 1px solid red;
+	padding :2px;
+	margin-bottom :10px;
+	float : left;
+	margin-right : 10px;
+}
+
+.paragrafi1 { text-align :right; }
