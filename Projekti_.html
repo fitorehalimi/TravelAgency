@@ -5,21 +5,87 @@
 
 <style type="text/css">
 body { 
-font-family: Arial,
-	sans-serif;
-	margin: 0;
-	padding: 0;
-	background: #e5e5e5;
-	color: #3f3f3f;
-	font-size: 16px;
-	line-height: 24px;
+
+/* Footer */
+#wrap {
+
+    text-align:left;
+    color: gray;
+    padding: 10px 100px 150px 200px;
 }
 
+
+
+.left
+    {
+         
+    text-align:left;
+    color: gray;
+    padding:10px 100px 150px 5px;
+     
+    }
+
+
+.center
+    {
+                 
+    text-align:center;
+    color: gray;
+   margin-top: 0px;
+	margin-bottom:1800px;
+	margin-right: 200px;
+    }
+	
+
+		 
 </style>
 </head>
 
-<body>
+
+<div id="wrap">
+    <div class="left">
+<h5> About us </h5>
+<img src="aboutus.jpg" height="90px" width="215px"> 
+<figcaption>
+As a travel Website we always<br> want to
+    have the opportunity to help <br>
+    you to choose the best 
+    place to <br>realx and have a good time 
+    with your family<br> and friends 
+    we always want to make sure that <span id="dots">...</span><span id="more"> you will<br>
+    be happy with our offers and places that<br>
+    we offer over here </span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+</figcaption>
+</div>
+    
+  <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+    
+    <div class="center">
+    <h5>Personal Info</h5>
+    <p>If you want to sign up or<br> If you already have <br>
+        write down your email</p>    
+
+    </div>
+    </div>
 
 
+</center>
 </body>
 </html>
