@@ -7,36 +7,49 @@
 body { 
 
 /* Footer */
-#wrap {
 
+.Divperfooter {
+ margin-top:-80px;
+ background: #d9d9d9;
+ }
+
+#partone {
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-gap:1em;
     text-align:left;
     color: gray;
-    padding: 10px 100px 150px 200px;
+     
 }
-
-
 
 .left
     {
          
     text-align:left;
     color: gray;
-    padding:10px 100px 150px 5px;
-     
+	padding:30px 150px 300px 20px;
+      
     }
 
 
 .center
     {
                  
-    text-align:center;
+    text-align:left;
     color: gray;
-   margin-top: 0px;
-	margin-bottom:1800px;
-	margin-right: 200px;
+    padding:30px 150px 300px 1px;
+    position:absolute;
+    left:50%;
+    margin-left: -200px;
+     
+        
     }
 	
- }
+    .signupbox 
+    {
+        margin:auto;
+        
+    }
   
     .signupbox input{
         color:white;
@@ -49,13 +62,15 @@ body {
         
     .signupbox input[type="submit"]{
     cursor:pointer;
-    background:purple;
+    background:#9E6CD8;
     border-radius:5px;
     }
-	    .socialise {
+		 
+    
+    .socialise {
     text-align:left;
     color: gray;
-    padding:230px 10px 15px 20px;
+    padding:230px 10px 15px 1px;
     position:absolute;
     left:50%;
     margin-left: -200px;
@@ -63,10 +78,11 @@ body {
     }
     
     .fa:hover {
-        opacity: 0.7;}
+        opacity: 0.7;
+      
+    }
     
     .fa-linkedin {
-  background: #007bb5;
   padding: 10px;
   font-size: 20px;
   width: 30px;
@@ -112,13 +128,12 @@ body {
 
   
     }
-	
-	    
+    
        
     .upcoming {
     text-align:left;
     color: gray;
-    padding:30px 10px 105px 290px;
+    padding:30px 150px 300px 400px;
     position:absolute;
     left:50%;
     margin-left: -200px;
@@ -137,22 +152,37 @@ body {
         .upcoming2 {
     text-align:left;
     color: gray;
-    padding:320px 400px 190px 290px;
+    padding:260px 40px 190px 400px;
     position:absolute;
     left:50%;
     margin-left: -200px;
     }
+    
+    .bttn {
+  
+  color: #9E6CD8;
+  padding:1px 1px 2px 1px;
+  font-size: 11px;
+  border: none;
+  background-color: inherit;
+  
+  cursor: pointer;
+  display: inline-block;
+ 
+  
+}
     
     
   .paragrafi2{
         font-size:12px;
     }
     
- .contactus{
+    
+    .contactus{
         
     text-align:left;
     color: gray;
-    padding:30px 10px 15px 530px;
+    padding:30px 10px 15px 690px;
     position:absolute;
     left:50%;
     margin-left: -200px;
@@ -187,126 +217,109 @@ body {
     
     .contactbox input[type="submit"] {
         
-        background:purple;
+        background:#9E6CD8;
         border-radius: 5px;
         width:75px;
         
     }
+			
 </style>
 </head>
+
 <body>
 
-<div id="wrap">
+<!----------------------FOOTER----------------------->
+
+
+
+<div class="Divperfooter">
+
+<div id="partone">
     <div class="left">
-<h5> About us </h5>
-<img src="aboutus.jpg" height="90px" width="215px"> 
-<figcaption>
-As a travel Website we always<br> want to
-    have the opportunity to help <br>
-    you to choose the best 
-    place to <br>realx and have a good time 
-    with your family<br> and friends 
-    we always want to make sure that <span id="dots">...</span><span id="more"> you will<br>
-    be happy with our offers and places that<br>
-    we offer over here </span></p>
-<button onclick="myFunction()" id="myBtn">Read more</button>
-</figcaption>
+	<h5> About us </h5>
+	<img src="aboutus.jpg" height="90px" width="215px"> 
+	<figcaption><br>
+	    As a travel Website we always<br> want to
+		have the opportunity to help <br>
+		you to choose the best 
+		place to <br>realx and have a good time 
+		with your<br> family and friends 
+		we always<br> want to make sure that.. <br>you will
+		be happy with our <br>offers and places that<br>
+		we offer over here 
+         <br><button class="bttn success">Read More &raquo;</button>
+             </p>
+
+	</figcaption>
 </div>
     
-  <script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
     
-    <div class="center">
+<div class="center">
     <h5>Personal Info</h5>
     <p>If you want to sign up or<br> If you already have <br>
         write down your email</p>    
- <div class="signupbox">
+    <div class="signupbox">
     <form>
     <input type="email" name="" placeholder="Email Here">
         <input type="submit" name="" value="SIGN UP">
     </form>
-        </div></div>
-    
-      <div class="Socialise">
-        <h5>Socialise</h5>
-
-   <i class=" fa fa-linkedin"> </i>Linked in
-   <i class=" fa fa-twitter"> </i>Twitter
-  <br><br>
-    <i class=" fa fa-pinterest"> </i>Pinterest
-    <i class=" fa fa-rss"> </i>RSS feed
-
-  </div>
-    
-   
-    
-    
-    
-    <div class="Upcoming" >
-       <dd></dd><h5> Upcoming Dates</h5>
-    
-        <dt>Dubai,next week</dt>
-        <dt class="date"><i>Friday,6th April,2000</i></dt></dd>
-        
- 
-   
-  
-        
-        <p class="paragrafi1">Next week we are <br>heading to Dubai.<br>Book your flight.
-        All you have to do<br>
-        just write your email<br>
-        after that we send <br>
-        you , our offers<br>.
-    You just gotta pick one<br></p>
-   
-   
-    </div> 
-    
-
- 
-    <div class="Upcoming2">
-         <dd></dd><h5> Another Booking</h5>
-    
-        <dt>Maldives,next week</dt>
-        <dt class="date"><i>Friday,6th April,2000</i></dt></dd>
-     
-    <p class="paragrafi2">Next week we are <br>heading to Maldives.<br>Book your flight.
-        All you have to do<br>
-        just write your email<br>
-        after that we send <br>
-        you , our offers<br>.
-    You just gotta pick one<br></p>
-   
-<div class="ContactUs">
-        <h5>Contact Us</h5>
-
-     <div class="contactbox">
-     <form>
-     <input type="text" name="" placeholder="Name"><br><br>
-     <input type="text" name=""  placeholder="Email"><br><br>
-     <textarea name="Message" rows="5" cols="20">Message</textarea><br>
-     <input type="submit" name=""  value="SUBMIT">
-    </form>
-     
-        
-     </div></div>
-    
     </div>
+</div>
+    
+<div class="Socialise">
+    <h5>Socialise</h5>
+    <i class=" fa fa-linkedin"> </i>Linked in
+    <i class=" fa fa-twitter"> </i>Twitter
+    <br><br>
+    <i class=" fa fa-pinterest"> </i>Pinterest
+    <i class=" fa fa-rss"> </i>RSS feed  
+</div>
+    
+<div class="Upcoming" >
+    <dd></dd><h5> Upcoming Dates</h5>
+    
+    <dt>Dubai,next week</dt>
+    <dt class="date"><i>Friday,27th December,2018</i></dt></dd>
+         
+    <p class="paragrafi1">Next week we are heading to Dubai.<br>Book your flight.
+        All you have to do
+        just write<br>your email
+        after that we<br>send 
+        you , our offers.
+        You just gotta pick one <br><button class="bttn success">Read More &raquo;</button><br></p>
+</div> 
+    
+<div class="Upcoming2">
+    <dd></dd><h5> Another Booking</h5>
+    
+    <dt>Maldives,next week</dt>
+    <dt class="date"><i>Friday,28th December,2018</i></dt></dd>
+    <p class="paragrafi2">Next week we are heading to Maldives.<br>Book your flight.
+        All you have to do
+        just write<br>your email
+        after that we<br>send 
+        you , our offers.
+        You just gotta pick one<br><button class="bttn success">Read More &raquo;</button><br></p>
+   
+</div>
+
+<div class="ContactUs">
+    <h5>Contact Us</h5>
+
+    <div class="contactbox">
+    <form>
+    <input type="text" name="" placeholder="Name"><br><br>
+    <input type="text" name=""  placeholder="Email"><br><br>
+    <textarea name="Message" rows="5" cols="20">Message</textarea><br>
+    <input type="submit" name=""  value="SUBMIT">
+    </form>  
+    </div>
+</div>
+
+
+</div>
 </center>
 </body>
 </html>
+
