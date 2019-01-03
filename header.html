@@ -4,39 +4,54 @@
 <title>Travel Agency</title>
 <style type="text/css">
 
+ .searchbox{
+        position:absolute;
+        left:73%;
+        top:10%;
+    }  
+    
+    input
+    {
+        position: relative;
+        display:inline-block;
+        font-size:20px;
+        box-sizing: border-box;
+        
+    }
+    
+    input[type="text"]
+    {
+       background: #fff;
+        width:300px;
+        height:39px;
+        padding: 0 7px;
+        
+    }
+    input[type="submit"]
+    {
+        position: relative;
+        left: -5px;
+        border-radius: 0 10px 10px 0;
+        padding:8px;
+        background-color: mediumpurple;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
     
   
-    .searchbox {
-    margin-left:1250px;
-    margin-bottom:-55px;
-       
-    }
     
-    .searchbox input {
-        
-        padding:4px;
-       color:white;
-        
-       
-    }
     
-    .searchbox input [type="submit"]
-    {
-        border-bottom-right-radius: 8px 20px;
-        border-top-right-radius: 8px 20px;
-        padding:8px;
-        cursor:pointer;
-        background:#9E6CD8;
-    
-    }
 	h1{
 font-family : BELL MT;
-          }
-.header {
+font-size: 43px;        
+}
+	.header {
   background-color: white;
   padding: 1px;
   text-align: left;
-         }
+}
 
 #navbar {
   overflow: hidden;
@@ -57,18 +72,22 @@ font-family : BELL MT;
   background-color: #9E6CD8;
   color: white;
 }
+
+.content {
+  padding: 16px;
+}
 </style>
 </head>
 
 <body>
 <div class="header">
 <hr color="#9E6CD8" size="3">
-    <br>
+   <br> 
     
 <div class="searchbox" > 
     <form>
-    <input type="text" name="text" class="search" placeholder="Search our Agency..." >
-     <input type="submit" name="submit" class="submit" value="SEARCH" >
+    <input type="text" name=""  placeholder="Search our Agency..." >
+     <input type="submit" name=""  value="SEARCH" >
     </form>
     </div>
     
@@ -77,14 +96,17 @@ font-family : BELL MT;
 </div>
 
 <div id="navbar">
-  <a href="#">Home</a>	
+    <a href="#">Home</a>
   <a href="#">Hotels</a>
   <a href="#">Top Destinations</a>
   <a href="#">Tours & Activities</a>
   <a href="#">Vacation Packages</a>
   <a href="#">Flights</a>
   <a href="#">Car Rental</a>
-</div>
+  
+</div>   
+  
+    
 
 	
 	
