@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: arial;
+font-size: 16px;
+background-image: url("back.jpg");
+bacground-repeat: no-repeat;
+background-size: 100%;
+}
+
+ .searchbox{
+        position:absolute;
+        left:70%;
+        top:12%;
+        
+    }  
+    
+    input
+    {
+        position: relative;
+        bottom:10px;
+        display:inline-block;
+        font-size:20px;
+        box-sizing: border-box;
+        
+    }
+    
+    input[type="text"]
+    {
+       background: #fff;
+        width:300px;
+        height:39px;
+        padding: 0 7px;
+        
+    }
+    input[type="submit"]
+    {
+        position: relative;
+        left: -5px;
+        border-radius: 0 10px 10px 0;
+        padding:8px;
+        background-color: mediumpurple;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+	h1{
+font-family : BELL MT;
+     font-size: 43px;
+    margin-left:10px;
+}
+	.header {
+  background-color: white;
+  padding: 1px;
+  text-align: left;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #9E6CD8;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+ 
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.paragrafi1{
+  float: right;
+  margin-top: -340px;
+  margin-right:5px;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width:49%;
+  font-size: 18px;
+  border-radius: 15px;
+  }
+
+p 
+{ margin-right:370px;
+
+  float: right;
+  margin-top:-400px;
+  border: 3px dashed #9E6CD8 ;
+  padding: 10px 15px;
+  background: white;
+  font-family: BELL MT;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 7px #9E6CD8;
+  }
+
+</style>
+</head>
+<body>
+<div class="header">
+<hr color="#9E6CD8" size="3">
+    <br>
+    
+<div class="searchbox" > 
+    <form>
+    <input type="text" name="text" class="search" placeholder="Search our Agency..." >
+     <input type="submit" name="submit" class="submit" value="SEARCH" >
+    </form>
+    </div>
+    
+    
+  <h1>TRAVEL AGENCY</h1><br>
+</div>
+
+<div id="navbar">
+<a href="ProjektiInternet.html">Home</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="TopDestinations.html">Top Destinations</a>
+  <a href="Toursandactivities.html">Tours & Activities</a>
+  <a href="#">Vacation Packages</a>
+  <a href="flights.html">Flights</a>
+  <a href="#">Car Rental</a>
+  
+</div>
+<br> <br>
+
+<div class="slideshow-container" width="50%">
+<div class="mySlides fade">
+  <img src="peninsula.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="peninsula1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="peninsula2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="peninsula3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="peninsula4.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<p> <b> The Peninsula Chicago </b></p> <br>
+ <div class="paragrafi1">
+Occupying prime real estate on Chicago's coveted Magnificent Mile, The Peninsula 
+Chicago combines Hong Kong's cosmopolitan flair with the Windy City's Midwestern charm. 
+Travelers describe the guest rooms as comfortable thanks to their creamy color palette and 
+plush furniture, not to mention their modern techie touches, like a bedside remote command 
+station that controls the lights, television and room temperatures. Meanwhile, the renowned 
+Peninsula Spa is in a class by itself: earning The Peninsula Chicago many accolades from health 
+and leisure magazines. Another honorable mention goes to the afternoon tea served in the lobby bar, 
+which visitors say is a nice and welcome touch. During your stay, guests recommend making time for the 
+tasty Cantonese dishes served in the Shanghai Terrace restaurant. However, for many travelers, it was The 
+Peninsula Chicago's friendly service staff that convinced them to stay here again.
+  </div>
+<br> <br>
+
+    <fieldset>
+        <legend> <b> PERSONAL DETAILS </b> </legend>
+        <label for="name">Username: </label> <input type="text"  placeholder="Your username">
+        <label for="email">Email: </label> <input type="text" placeholder="Your email">
+        <label for="phone">Phone: </label> <input type="tel" placeholder="Please enter your phone number">
+     </fieldset>
+    
+    <br>
+    <fieldset>
+    <legend> <b> HOTEL RESERVATIONS </b> </legend>
+    <label for ="date">Check-in </label><input type="date" name="date" >
+	<label for ="date">Check-out  </label><input type="date" name="date" >
+	<br> <br>
+	<label for="numberofrooms">Rooms </label><input type="number" name="numberofrooms" min="1" max="9"> <br> <br>
+	<label for="numberofadults">Adults(18+) </label><input type="number" name="numberofadults"> <br> <br>
+	<label for="numberofchildren">Children </label><input type="number" name="numberofchildren" min="1" max="6"> 
+	<br> </br>
+<input type="submit" value="RESERV"/>
+    </fieldset>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
