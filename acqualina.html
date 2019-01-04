@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>Travel Agency</title>
+<style type="text/css">
+body {
+font-family: arial;
+font-size: 16px;
+background-image: url("back.jpg");
+bacground-repeat: no-repeat;
+background-size: 100%;
+}
+
+ .searchbox{
+        position:absolute;
+        left:70%;
+        top:12%;
+        
+    }  
+    
+    input
+    {
+        position: relative;
+        bottom:10px;
+        display:inline-block;
+        font-size:20px;
+        box-sizing: border-box;
+        
+    }
+    
+    input[type="text"]
+    {
+       background: #fff;
+        width:300px;
+        height:39px;
+        padding: 0 7px;
+        
+    }
+    input[type="submit"]
+    {
+        position: relative;
+        left: -5px;
+        border-radius: 0 10px 10px 0;
+        padding:8px;
+        background-color: mediumpurple;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+	h1{
+font-family : BELL MT;
+         font-size: 43px;
+    margin-left:10px;
+}
+	.header {
+  background-color: white;
+  padding: 1px;
+  text-align: left;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #9E6CD8;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.pic {
+  width: 200px;
+  height: 150px;
+  margin-left:15px;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+
+.pic:hover {
+  width: 300px;
+  height: 300px;
+}
+.paragrafi{
+  float: right;
+  margin-top: -220px;
+  margin-right:50px;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width:40%;
+  font-size: 18px;
+  border-radius: 15px;
+  }
+
+p 
+{ margin-right:435px;
+  margin-top: -150px;
+  float: right;
+  border: 3px dashed #9E6CD8 ;
+  padding: 10px 15px;
+  background: white;
+  font-family: BELL MT;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 7px #9E6CD8;
+  }
+</style>
+</head>
+
+<body>
+<div class="header">
+<hr color="#9E6CD8" size="3">
+<br>
+<div class="searchbox" > 
+    <form>
+    <input type="text" name="text" class="search" placeholder="Search our Agency..." >
+     <input type="submit" name="submit" class="submit" value="SEARCH" >
+    </form>
+    </div>
+    
+    
+  <h1>TRAVEL AGENCY</h1><br>
+</div>
+
+<div id="navbar">
+<a href="ProjektiInternet.html">Home</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="TopDestinations.html">Top Destinations</a>
+  <a href="Toursandactivities.html">Tours & Activities</a>
+  <a href="#">Vacation Packages</a>
+  <a href="flights.html">Flights</a>
+  <a href="#">Car Rental</a>
+  
+</div>
+<br> <br>
+<img src="acqualina1.jpg" class="pic" >
+<img src="acqualina2.jpg" class="pic" >
+<img src="acqualina3.jpg" class="pic" >
+<br> <br>
+<img src="acqualina4.jpg" class="pic" >
+<img src="acqualina5.jpg" class="pic" >
+<img src="acqualina6.jpg" class="pic" >
+
+<p> <b>Acqualina </b></p> <br>
+ <div class="paragrafi">
+ This Four Seasons property attracts beach lovers. Positioned along a beautiful stretch of Hulopoe Bay sand 
+ overlooking the Pacific Ocean, this resort offers breathtaking ocean views, manicured grounds and top-notch 
+ customer service. During their stays, guests can enjoy outdoor pursuits, such as snorkeling, deep sea fishing, 
+ hiking, whale watching, scuba diving and more. Visitors use terms like "paradise" and "heaven on earth" to describe 
+ the property. Guest rooms all feature private patios, as well as amenities like 75-inch flat-screen TVs with Blu-ray players.
+    </div>
+<br> <br> 
+
+    <fieldset>
+        <legend> <b> PERSONAL DETAILS </b> </legend>
+        <label for="name">Username: </label> <input type="text"  placeholder="Your username">
+        <label for="email">Email: </label> <input type="text" placeholder="Your email">
+        <label for="phone">Phone: </label> <input type="tel" placeholder="Please enter your phone number">
+     </fieldset>
+    
+    <br>
+    <fieldset>
+    <legend> <b> HOTEL RESERVATIONS </b> </legend>
+    <label for ="date">Check-in </label><input type="date" name="date" >
+	<label for ="date">Check-out  </label><input type="date" name="date" >
+	<br> <br>
+	<label for="numberofrooms">Rooms </label><input type="number" name="numberofrooms" min="1" max="9"> <br> <br>
+	<label for="numberofadults">Adults(18+) </label><input type="number" name="numberofadults"> <br> <br>
+	<label for="numberofchildren">Children </label><input type="number" name="numberofchildren" min="1" max="6"> 
+	<br> </br>
+<input type="submit" value="RESERV"/>
+    </fieldset>
+</body>
+</html>
