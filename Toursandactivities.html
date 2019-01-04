@@ -5,25 +5,42 @@
     <title>Travel Agency</title> 
 <style type="text/css">
 
-.searchbox {
-    margin-left:1050px;
-    margin-bottom:-55px; 
-    }
-    
-.searchbox input {
+ .searchbox{
+        position:absolute;
+        left:70%;
+        top:12%;
         
-       padding:8px;
-       color:white;
+    }  
+    
+    input
+    {
+        position: relative;
+        bottom:10px;
+        display:inline-block;
+        font-size:20px;
+        box-sizing: border-box;
+        
     }
     
-.searchbox input [type="submit"]
+    input[type="text"]
     {
-        border-bottom-right-radius: 8px 20px;
-        border-top-right-radius: 8px 20px;
+       background: #fff;
+        width:300px;
+        height:39px;
+        padding: 0 7px;
+        
+    }
+    input[type="submit"]
+    {
+        position: relative;
+        left: -5px;
+        border-radius: 0 10px 10px 0;
         padding:8px;
-        cursor:pointer;
-        background:#9E6CD8;
-    
+        background-color: mediumpurple;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
     }
     
 body {  
@@ -37,6 +54,8 @@ body {
 		}
 h1{
 font-family : BELL MT;
+       font-size: 43px;
+    margin-left:10px;
 }
 	.header {
   background-color: white;
@@ -83,9 +102,10 @@ font-family : BELL MT;
   
     .plan{
     color:#E8C46F;
-   margin-left:530px;
+   margin-left:430px;
   font-size:60px;
   font-family : BELL MT;
+        margin-top:250px;
         
     }
     
@@ -93,11 +113,13 @@ font-family : BELL MT;
   color:#E8C46F;
   font-size:19;    
    margin-left:60px;
+      
         
     }
     
     .video1{
         margin-left:60px;
+  
     }
     
     .terracedesc{
@@ -105,6 +127,8 @@ font-family : BELL MT;
   font-size:19; 
   margin-left:650px;
   margin-top:-215px;
+
+
         
     }
     
@@ -112,18 +136,124 @@ font-family : BELL MT;
     font-size:19;    
    margin-left:60px;
    margin-top:120px;
+
+
     }
   
     .tours{
    margin-left:800px;
   margin-top:-220px;
+     
+
         
     }
+    
+    
+
+    .kryes{
+        border : 3px dashed #E8C46F ;
+
+background : white;
+border-radius : 20px;
+box-shadow : 15px 15px 7px #E8C46F;
+
+    }
+    
+    
+    #maindiv1 {
+            width: 100%;
+}
+  
+    
+    #divleftt {
+            width: 50%;
+            float: left;
+        }
+        
+        #divrightt {
+            width: 40%;
+            float: left; 
+        }
+        
+        .leftImagee {
+            width: 98%;
+            height: 360px;
+            margin-top: 20px;
+            margin-left: 20px;
+            
+        }
+        
+        .rightImagee {
+            height: 170px;
+            margin-top: 20px;
+            margin-left: 20px;
+            float: left;
+            width: 280px;
+        }
+    
+    
+    .plan2{
+          color:#E8C46F;
+   margin-left:350px;
+  font-size:60px;
+  font-family : BELL MT;
+        
+        
+    }
+    
+    .another{ margin-top:-10px;
+        
+    }
+    
+    #grad5 {
+          
+  height: 400px;
+  background-color: red;
+  background-image: linear-gradient(#E8C46F,#7a2c2c); 
+    
+}
+    
+    .terracedesc2{
+     font-size:19;    
+   margin-left:14px;
+   margin-top:140px;
+    
+        
+    }
+    
+
+    .skytree{
+        
+  -webkit-column-count: 3; 
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px; 
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+        font-size:19; 
+  
+}
+    
+    .wiki{
+        color:#E8C46F;
+       font-family : BELL MT;
+       font-size:30px;
+        text-align:center;
+    }
+    
+      .terracedesc3{
+     font-size:19;    
+   margin-left:1px;
+   margin-top:10px;
+    
+        
+    }
+   
 </style>
 </head>
 
 
-<body>
+
 <div class="header">
 <hr color="#9E6CD8" size="3">
     <br>
@@ -141,25 +271,24 @@ font-family : BELL MT;
 
 <div id="navbar">
 <a href="ProjektiInternet.html">Home</a>
-  <a href="#">Hotels</a>
-  <a href="#">Top Destinations</a>
-  <a href="#">Tours & Activities</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="topdestinations.html">Top Destinations</a>
+  <a href="Toursandactivities.html">Tours & Activities</a>
   <a href="#">Vacation Packages</a>
-  <a href="#">Flights</a>
+  <a href="flights.html">Flights</a>
   <a href="#">Car Rental</a>
   
 </div>
 
+    <body>
+
     
     
-<body>
+     <div class="kryes">
+    <img src="tokyoskytree.jpg" alt="tokyoskytree" height="750px" width="1345px">
     
     
-    
-    <img src="tokyoskytree.jpg" alt="tokyoskytree" height="500px" width="1350px">
-    
-    
-    <div class="tokyoskytree"><h1 style="margin-top:-480px; margin-left:380px;" ><img src="inaday.png" width="600" alt="TOKYO SKYTREE in a Day"></h1>
+    <div class="tokyoskytree"><h1 style="margin-top:-680px; margin-left:280px;" ><img src="inaday.png" width="780" alt="TOKYO SKYTREE in a Day"></h1>
     </div>
     
     
@@ -169,11 +298,11 @@ font-family : BELL MT;
 	                            	</p>
     
 
-    <h1 style="margin-top:180px; margin-left:540px; color:#E8C46F;" >TOKYO SKYTREE</h1>
-   
-    <p class="plan"> One-day Plan</p>
+
+   <div class="kryes">
+    <p class="plan">Skytree Terrace Tours</p>
     
-    <p class="terrace">SKYTREE TERRACE TOURS</p>
+   
    
     
     
@@ -192,26 +321,85 @@ font-family : BELL MT;
     
    <p class="terracedesc1">Tembo Deck Floor 345<br>
     Enjoy “Tokyo Cuisine”, a new Japanese cuisine inspired <br>by the spirit and character of Shitamachi, while surrounded by a <br>magnificent view 345 m up in the sky. After that in floor 350 <br>you will enjoy drinks and the view from the highest placed <br>SKYTREE CAFE in Japan. <br>When you end up with them , we will take a break after enjoying the <br> Tower view at another cafe,floor 340. 
-    </p> 
+    
+    
+        <button onclick="myFunction()">WARNING</button>
+
+            <script>
+         function myFunction() {
+        alert("You should never split from group!!");}
+       </script>
+       </p> 
+    
+   
     
     <div class="tours">
     
-    <video width="480" controls>
+  <video width="480" controls>
     <source src="tours.mp4" type="video/mp4">
-</video>
+  </video>
 
-    
+  
+     </div>
+
     </div>
+       
+    
+    
+       
+    <p class="plan2">Restaurants At The Skytree</p>
+    
+   <div class="another">
+        
+ <div id="grad5"> 
+      
+    <div id="maintwo">
+<div id="divleftt">
+    <a href="restaurantt.html"><img src="caffe1.jpg" class="leftImagee" alt="caffe1" /> </a>
+</div>
 
     
+   <img src="caffe.jpg" class="rightImagee" alt="Caffe" />
+      
+       <img src="bar.jpg" class="rightImagee" alt="Bar" />
+      
+        <img src="restaurant.jpg" class="rightImagee" alt="Restaurant" />
+  
+        <img src="cuisine.jpg" class="rightImagee" alt="Cuisine" />
+       
+
+    </div>
+</div>
+   
+    
+
+    
+    <p class="wiki">Wanna know something about Skytree? </p>
+    <div class="skytree">Tokyo Skytree (東京スカイツリー Tōkyō Sukaitsurī) is a broadcasting, restaurant, and observation tower in Sumida, Tokyo, Japan. It became the tallest structure in Japan in 2010 and reached its full height of 634.0 metres (2,080 ft) in March 2011, making it the tallest tower in the world, displacing the Canton Tower, and the second tallest structure in the world after the Burj Khalifa (829.8 m/2,722 ft).
+
+The tower is the primary television and radio broadcast site for the Kantō region; the older Tokyo Tower no longer gives complete digital terrestrial television broadcasting coverage because it is surrounded by high-rise buildings. Skytree was completed on Leap Day, 29 February 2012, with the tower opening to the public on 22 May 2012. The tower is the centrepiece of a large commercial development funded by Tobu Railway and a group of six terrestrial broadcasters headed by NHK. Trains stop at the adjacent Tokyo Skytree Station and nearby Oshiage Station. The complex is 7 km (4.3 mi) north-east of Tokyo Station.</div>
+    
+      <hr>
+          
+    <p class="terracedesc3">Architects Have Found A Way To Protect The Skytree Tower From Earthquakes ! Engineers Used Ancient Techniques To Protect Tokyo's Skytree From Earthquakes <br>
+        Listen to the audio... </p>
+        
+
+    <div class="video1">  
+   <audio controls>
+  
+  <source src="audio1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+       
+        </div>
+        
+    </div> 
     
     
+
     
-    
-    
-    
-    
-    
+
     
     
     </body>
