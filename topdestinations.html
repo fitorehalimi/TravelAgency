@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>top destinations</title>
+<style type="text/css">
+body {
+font-family: arial;
+font-size: 16px;
+background-image: url("back.jpg");
+background-size: 100%;
+}
+    .searchbox{
+        position:absolute;
+        left:73%;
+        top:10%;
+    }  
+    
+    input
+    {
+        position: relative;
+        display:inline-block;
+        font-size:20px;
+        box-sizing: border-box;
+        
+    }
+    
+    input[type="text"]
+    {
+       background: #fff;
+        width:300px;
+        height:39px;
+        padding: 0 7px;
+        
+    }
+    input[type="submit"]
+    {
+        position: relative;
+        left: -5px;
+        border-radius: 0 10px 10px 0;
+        padding:8px;
+        background-color: mediumpurple;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+  
+    
+    
+	h1{
+font-family : BELL MT;
+font-size: 43px;        
+}
+	.header {
+  background-color: white;
+  padding: 1px;
+  text-align: left;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #9E6CD8;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+    
+#myVideo {
+    position: absolute;
+    float:left;
+    
+    margin-top:-70px;
+    height:85%;
+    width:60%;
+    margin-right: 600px;
+    
+ 
+}
+
+.content {
+
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 57.3%;
+  height:25%;
+  margin-top:280px;
+  padding: 20px;
+
+}
+
+
+#myBtn {
+  width: 70px;
+  font-size: 17px;
+    margin-top:-20px;
+  padding: 5px;
+  border: none;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+    .p{
+        text-shadow: 3px 2px #9E6CD8;
+        font-size:40px;
+        float:right;
+        margin-right:-50px;
+        font-family: BELL MT;
+    }
+.Sidebar-3
+	{
+		
+		margin:50px 150px 200px ;
+		padding: 20px 0px 30px 20px;
+		width: 350px;
+		height: auto;
+		float: right;
+		background-color: #D4D4D4;
+		border-color:#FFF;
+		border-style: solid;
+		border-width: 1px;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+		box-shadow: 1px 0px px silver;
+		
+	}
+.sidebar-3-min
+	{
+		height:580px;
+		margin:20px;
+		overflow-y:scroll;
+	}
+    #div1, #div2 {width:340px;height:140px;padding:15px;border:5px solid #9E6CD8; margin-top:550px;}
+   
+    #mycanvas{
+        
+        margin-left:1100px;
+        margin-top: -110px;
+    }
+    h3{
+        margin-left: 460px;
+        margin-top:-200px;
+    }
+    </style>
+    <script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+    
+
+</head>
+
+<body>
+<div class="header">
+<hr color="#9E6CD8" size="3">
+   <br> 
+    
+<div class="searchbox" > 
+    <form>
+    <input type="text" name=""  placeholder="Search our Agency..." >
+     <input type="submit" name=""  value="SEARCH" >
+    </form>
+    </div>
+    
+    
+  <h1>TRAVEL AGENCY</h1><br>
+</div>
+
+<div id="navbar">
+    <a href="projektiinternet.html">Home</a>
+  <a href="hotels.html">Hotels</a>
+  <a href="topdestinations.html">Top Destinations</a>
+  <a href="#">Tours & Activities</a>
+  <a href="#">Vacation Packages</a>
+  <a href="flights.html">Flights</a>
+  <a href="#">Car Rental</a>
+  
+</div> 
+
+    <div class="Sidebar-3">
+						<div class="sidebar-3-min">
+							<img src="topdestinations1.jpg" width="280" height="200">
+							<img src="topdestinations2.jpg" width="280" height="200" >
+							<img src="topdestionations3.jpg" width="280" height="200">
+							<img src="topdestinatons4.jpg" width="280" height="200">
+							<img src="topdestinations5.jpg" width="280" height="200">
+        </div> </div>
+    
+   
+    <br> <br>
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="topdestinationsvideo.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Top Destinations</h1>
+  <p>With a world full of fascinating destinations, choosing the perfect place to vacation can present a challenge.That's why Travel Agency used expert opinions, user votes and current trends, in addition to evaluating sights, cultures, scenic beauty, food scenes and more, to compile this list. </p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="foto.jpg" draggable="true" ondragstart="drag(event)" width="336" height="140"> 
+<h3>The City of Light — a global trendsetter in terms of culture, <br>art, fashion and food — ranks in at number three on TripAdvisor’s list. <br>While Paris is perhaps best known for popular sites like the Louvre, <br>Eiffel Tower and Arc de Triomphe, the city is equally renowned for its <br>world-class restaurants and high end shops. <br>Where else can you do something asromantic as sipping French coffee,<br> nibbling on a baguette — or <br>freshly-made crêpe — and strolling <br>hand-in-hand along the Seine?</h3>
+    <canvas id="mycanvas" width="200" height="120" 
+style="border:3px solid #c3c3c3;">
+Canvas nuk perkrahet nga browseri juaj.
+</canvas>  
+<script>
+
+    var c = document.getElementById("mycanvas");
+    var ctx = c.getContext("2d");
+    //ctx.fillStyle("#FF0000");
+    //ctx.fillRect(0,0,150,75);
+    //ctx.fillStyle("#FEFEFE");
+    //ctx.strokeText("Pershendetje!",10,50);
+    ctx.font = "Arial 20px";
+    ctx.fillStyle ="#FFEEFF";
+    ctx.color = "red";
+    ctx.moveTo(0,0);
+    ctx.lineTo(100,50);  
+    ctx.lineTo(200,0); 
+    ctx.stroke(); 
+    ctx.strokeText("TO: TRAVEL AGENCY",10,80);
+    ctx.strokeText("KOSOVO",10,90);
+    ctx.strokeText("10000 PRISHTINE P.N.",10,100);
+    //ctx.arc()
+</script>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+
+
+
+</body>
+</html>
