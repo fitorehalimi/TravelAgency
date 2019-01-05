@@ -1,0 +1,272 @@
+<html manifest="demo.appcache">
+<head>
+
+<title>Travel Agency</title>
+<style type="text/css">
+body {
+font-family: arial;
+font-size: 16px;
+}
+
+ .searchbox{
+        position:absolute;
+        left:70%;
+        top:12%;
+        
+    }  
+    
+    input
+    {
+        position: relative;
+        bottom:10px;
+        display:inline-block;
+        font-size:20px;
+        box-sizing: border-box;
+        
+    }
+    
+    input[type="text"]
+    {
+       background: #fff;
+        width:300px;
+        height:39px;
+        padding: 0 7px;
+        
+    }
+    input[type="submit"]
+    {
+        position: relative;
+        left: -5px;
+        border-radius: 0 10px 10px 0;
+        padding:8px;
+        background-color: mediumpurple;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+	h1{
+font-family : BELL MT;
+         font-size: 43px;
+    margin-left:10px;
+}
+	.header {
+  background-color: white;
+  padding: 1px;
+  text-align: left;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #9E6CD8;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 10px;
+}
+h2
+{
+text-shadow: 10px 10px 10px #9E6CD8;
+}
+
+.hotelet {
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 250px;
+			}
+			
+@font-face {
+   font-family: Lucida Calligraphy;
+   src: url(sansation_light.woff);
+}
+
+h3 {
+   font-family: Lucida Calligraphy;
+   margin-left:490px;
+   margin-top:-200px;
+}
+.lista1{
+margin-left:-200px;
+margin-top:-150px;
+font-family: BELL MT;
+font-size:20px;
+}
+
+.lista2{
+margin-left:100px;
+margin-top:-150px;
+font-family: BELL MT;
+font-size:20px;
+}
+
+.Divperfooter1 {
+         
+         background: #d9d9d9;
+ }
+
+</style>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+
+</head>
+
+<body>
+<div class="header">
+<hr color="#9E6CD8" size="3">
+<br>
+<div class="searchbox" > 
+    <form>
+    <input type="text" name="text" class="search" placeholder="Search our Agency..." >
+     <input type="submit" name="submit" class="submit" value="SEARCH" >
+    </form>
+    </div>
+    
+    
+  <h1>TRAVEL AGENCY</h1><br>
+</div>
+
+<div id="navbar">
+<a href="ProjektiInternet.html">Home</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="topdestinations.html">Top Destinations</a>
+  <a href="Toursandactivities.html">Tours & Activities</a>
+  <a href="#">Vacation Packages</a>
+  <a href="flights.html">Flights</a>
+  <a href="#">Car Rental</a>
+</div>
+
+<div class="Divperfooter1">
+<div class="localStorage1">
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button if you are excited.</p>
+<p>The amount of clicks you do , shows how excited you are for your trip!!!!!</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="side">
+  <h2>WHY OUR AGENCY ?  </h2> 
+  
+   &#9830 <b>A personal touch</b><br>
+   From first contact, through the duration of your stay, and until you are safely home again, we are with you. You will know your personal travel consultant 
+   both by name and by face, as we make it a practice to greet our clients personally and go through the entire trip. <br> <br>
+   &#9830 <b>Friendly and knowledgeable staff </b> <br>
+   Since we began in 2000, we’ve created unforgettable travel experiences in the Kosovo region for thousands of clients 
+   from all over the world. That’s down to the quality of our people. Our staff members have extensive and firsthand knowledge 
+   of the region and are passionate about what they do.<br> <br>
+   &#9830 <b> Peace of Mind </b> <br>
+   When you book with us, we are there to rebook your flights or make new arrangements if weather or the unexpected occurs.  
+   No online travel booking site can offer you peace of mind that our service can. You can even speak to the same person every time that you call.<br> <br>
+   &#9830 <b> Save time and effort </b> <br>
+   Organising your own holiday can be a stressful task. Let us do the work for you! By choosing Nordic Visitor, you can save time and hassle by booking 
+   all of your itinerary services directly with a specialised local agency. <br> <br>
+   &#9830 <b> You’re in good hands </b> <br>
+   While on your journey, help is never out of reach. There is always a staff member on call 24/7 to handle any unforeseen situations, and we do our best to 
+   respond to emails and voicemail as soon as possible during our regular office hours. We also provide a temporary mobile phone with selected self-drive 
+   tours.<br><br>
+  </div>
+  <div class="main">
+    <h2> Hotels & Resorts </h2> 
+	<h4> <i> The world’s best places to stay </i></h4>
+	
+	<a href="peninsula.html">
+    <img src="peninsula.jpg" class="hotelet"> </a>
+ 
+	
+	<a href="fourseasons.html">
+	<img src="four seasons.jpg" class="hotelet"> </a>
+	
+	<a href="acqualina.html">
+	<img src="acqualina.jpg" class="hotelet" > </a>
+	
+	<img src="twin farms.jpg" class="hotelet">
+	
+	<img src="hualalai.jpg" class="hotelet"> 
+	
+	<img src="mandarin oriental.jpg" class="hotelet">
+  </div>
+  
+<h3>Hotels in the picture</h3>
+<div class="lista1">
+<ul style="list-style-type: circle">
+
+    <a href="peninsula.html">
+    <li><b>Peninsula</li></a><br>
+	
+	<a href="fourseasons.html">
+    <li>Four Seasons</li></a><br> 
+	
+	<a href="acqualina.html">
+    <li>Acqualina</li></a><br>
+</ul>
+</div>
+
+<div class="lista2">
+<ul style="list-style-type: circle">
+	<li>Twin Farms</li> <br>
+    <li>Hualalai</li><br>
+    <li>Mandarin Oriental</li> </b>
+</ul>
+</div>
+</body>
+</html>
+
+	
+	
+	
+	
+    
+    
+    
