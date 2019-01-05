@@ -63,7 +63,10 @@ font-family : BELL MT;
 body {
   font-family: Arial;
   font-size: 17px;
-  background-color: #F5F5DC;
+  background-image: url("sky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin:2px;
 }
 
 .container {
@@ -72,6 +75,7 @@ body {
   margin-right:80px;
   margin-top:20px;
   height:400px;
+  
 }
 
 .container img {vertical-align: middle;}
@@ -85,9 +89,7 @@ body {
   width: 100%;
   padding: 20px;
 }
-.center{
-  float:auto;
-}
+
 #maindiv1 {
             width: 100%
         }
@@ -103,42 +105,33 @@ body {
             float: left;
             }
             
-             
-        
-        * {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 12px;
-  font-family: Arial;
-  font-size: 17px;
-  
-}
+
 
 #myVideo {
   height:440px;
   position: end;
-  right: 0;
-  bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-  background-color: lightgray;
+  background-image: url("background.jpg");
+  background-size: 100%;
 
 }
 
-.content {
+.content2 {
 
   position: end;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background-image: url("travel.jpg");
+  background-repeat: no-repeat;
+  background-width:100%;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
 
 #myBtn {
-  width: 200px;
+  width: 220px;
   font-size: 18px;
   padding: 10px;
   border: none;
@@ -183,7 +176,7 @@ body {
 <h2 align="center" style="text-shadow: 0 0 3px #B0C4DE;">You Deserve a Vacation</h2>
 
 <div class="container">
-  <img src="flight.jpg" alt="Flight" style="width:100%;" height="400px">
+  <img src="flight1.jpg" alt="Flight" style="width:100%;" height="400px">
   <div class="content">
     
     <p style="font-family:  Verdana, Arial, Helvetica, sans-serif;text-shadow: 0 0 3px 	#F08080; ">All-Inclusive resorts on white sand beaches. Escorted European Tours. African Safaris.Americas National Parks. You name it, we&#39;ve got it. Our partnerships with industry leaders like Funjet Vacations, Globus Tours, Cosmos, Image and many others, ensures that not only will you have an outstanding travel experience, but that we can offer you the very best rates and travel promotions.As an added incentive, we can price match most major online travel companies.This way you get the best price and our service too.</p>
@@ -195,19 +188,19 @@ body {
 <div class="quicksearch blockcenter" style="width: 550px; ">
   
     
-    <div class="bg2 quicksearch-container" >
+    <div class=" quicksearch-container" >
             <h2 class="PageElement-Title">Vacation Search</h2>
 
         <div class="contentrow" style="margin:4px; background-color: #E6E6FA;">
-            <form name="VPSearchForm74473" id="frmQuickSearch74473" method="post" action="/TravelContent/SearchLoading">
+            <form name="VSearchForm74473" id="fromQuickSearch74473" method="post" action="/TravelContent/SearchLoading">
                 <input type="hidden" name="mid" value="15574">
                 <input type="hidden" name="selTravelType" value="23">
 
                     <fieldset>
-                    <div class="">
+                    
                                             <div>
-                                                <label for="ddTravelDestination74473">Destination:</label>
-                                                <select id="ddTravelDestination74473" name="selTextDestination">
+                                                <label for="TravelDestination74473">Destination:</label>
+                                                <select id="TravelDestination74473" name="setTextDestination">
                                                     <option value="">Any Destination</option>
                                                         <option value="Africa*Africa">Africa</option>
                                                         <option value="Alaska*Alaska">Alaska</option>
@@ -241,8 +234,8 @@ body {
                                                 <div id="destinationMatchesDiv74473" class="destinationMatchesClass"></div>
                                             </div>
                                     <div>
-                                        <label for="ddTravelDate74473">Departure Date:</label>
-                                        <select id="ddTravelDate74473" name="selWhen">
+                                        <label for="TravelDate74473">Departure Date:</label>
+                                        <select id="TravelDate74473" name="setWhen">
                                             <option value="">Any Date</option>
                   
                                                 <option value="01*2019*January 2019">January 2019</option>
@@ -273,8 +266,8 @@ body {
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="ddTravelLength74473">Travel Length:</label>
-                                        <select id="ddTravelLength74473" name="selLength">
+                                        <label for="TravelLength74473">Travel Length:</label>
+                                        <select id="TravelLength74473" name="setLength">
                                             <option value="">Any Length</option>
                                             <option value="0*2*0-2 nights">0-2 nights</option>
                                             <option value="3*6*3-6 nights">3-6 nights</option>
@@ -284,8 +277,8 @@ body {
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="ddPriceRange74473">Price range per person:</label>
-                                        <select id="ddPriceRange74473" name="selBudget">
+                                        <label for="PriceRange74473">Price range per person:</label>
+                                        <select id="PriceRange74473" name="setBudget">
                                             <option value="">Any Price</option>
                                             <option value="0*250*">$250 or less</option>
                                             <option value="251*500*">$251 - $500</option>
@@ -297,7 +290,6 @@ body {
                                         </select>
                                     </div>
                         <div>
-<a class="bg2-Link" href="/TravelContent/DetailedSearch?Mid=15574">Detailed Search</a> 
                            <div style="float: right;">
                                 <button class="button-default button-go " type="submit">Go&nbsp;&#9658;</button>
                             </div>
@@ -309,26 +301,22 @@ body {
         </div>
     </div>
 </div></div>
-</p>
-</div>
+
+
 
 <div id="divright">
   <h3 align="center">Great Vacation Destinations</h3>
 
-<p align="right"><a href="/TravelContent/SearchResults?selTravelType=72*Land Only&amp;txtDestination=Caribbean"><img align="baseline" src="caribbean.jpg" style="border-width: 0px; border-style: solid;  margin:10px 5px; width: 130px; height: 130px;"></a>
+<img align="right" src="ireland.jpg" style="  margin:10px 5px; width: 130px; height: 130px;">
 
-  <a href="/TravelContent/SearchResults?selTravelType=72*Land Only&amp;txtDestination=Europe"><img align="baseline" src="europe.jpg" style="border-width: 0px; border-style: solid; margin: 10px 5px; width: 130px; height: 130px;"></a>
+ <img align="right" src="hawaii1.jpg" style=" margin: 10px 5px; width: 130px; height: 130px;">
 
-  <a href="/TravelContent/SearchResults?selTravelType=72*Land Only&amp;txtDestination=Hawaii"><img align="baseline" src="hawaii.jpg" style="border-width: 0px; border-style: solid; margin: 10px 5px; width: 130px; height: 130px;"></a>
+ <img align="right" src="paris.jpg" style=" margin: 10px 5px; width: 130px; height: 130px;">
 
-  <a href="/TravelContent/SearchResults?selTravelType=72*Land Only&amp;txtDestination=Las Vegas"><img align="baseline" src="lasvegas.jpg" style="border-width: 0px; border-style: solid; margin: 10px 5px; width: 130px; height: 130px;"></a>
+ <img align="right" src="venecia.jpg" style=" margin: 10px 5px; width: 130px; height: 130px;">
 
-  <a href="/TravelContent/SearchResults?selTravelType=72*Land Only&amp;txtDestination=Mexico"><img align="baseline" src="mexico.jpg" style="border-width: 0px; border-style: solid; margin: 10px 5px; width: 130px; height: 130px;"></a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+ <img align="right" src="greece.jpg" style=" margin: 10px 5px; width: 130px; height: 130px;">
+
 </div>
 
   <video autoplay muted loop id="myVideo">
@@ -336,8 +324,8 @@ body {
   Your browser does not support HTML5 video.
   </video>
 
-  <div class="content">
-  <h1 align="position:left;" style="text-shadow: 0 0 3px #663399;">Make a Difference with Us
+  <div class="content2">
+  <h1 align="left" style="text-shadow: 0 0 3px #663399;">Make a Difference with Us
   
   <button id="myBtn" onclick="myFunction()" style="float:right;">Pause</button></h1>
   </div>
